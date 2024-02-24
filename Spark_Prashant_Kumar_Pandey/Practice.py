@@ -28,7 +28,7 @@ df2 = spark.sql("SELECT * FROM global_temp.people where age='2'")
 df2.show() """
 
 
-
+"""
 ## Select columns operations.
 df = spark.createDataFrame([
 
@@ -44,6 +44,6 @@ df[["name", "age"]].show()
 
 df[df.age > 3].show()
 
-df[df[0] > 3].show()
+df[df[0] > 3].show() """
 
 
